@@ -3,7 +3,8 @@
 #install.packages("dplyr")
 library(dplyr)
 
-setwd("~/BASEBALL/Simple Sabermetrics")
+#setwd("~/BASEBALL/Simple Sabermetrics")
+setwd("YOUR FILE PATH HERE")
 statcast_data <- read.csv("mlb_2020_statcast_pitcher.csv")
 
 #######################################################################
