@@ -26,8 +26,8 @@ ui <- fluidPage(
     
     sidebarLayout(
         sidebarPanel(
-            selectInput("PitcherInput", "Select Pitcher", choices = sort(unique(NL_CY$player_name))),
-            dateRangeInput("DateRangeInput", "Select Date Range", start = min(NL_CY$game_date), end = max(NL_CY$game_date)),
+            selectInput(inputId = "PitcherInput", label = "Select Pitcher", choices = sort(unique(NL_CY$player_name))),
+            dateRangeInput(inputId = "DateRangeInput", label = "Select Date Range", start = min(NL_CY$game_date), end = max(NL_CY$game_date)),
             img(src = "ss_logo.png", style = "display: block; margin-left: auto; margin-right: auto;", height = 150, width = 150)
         ),
 
