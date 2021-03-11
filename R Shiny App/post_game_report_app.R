@@ -32,8 +32,8 @@ ui <- fluidPage(
            wellPanel(style = "background: white; border-color:black; border-width:2px",
                      fluidRow(
                          column(2, img(src = "ss_logo.png", height = 150, width = 150), align = "center"), 
-                         column(4, h2(strong(textOutput("selected_pitcher"))), tags$hr(style="border-color: black;"), style = "padding-right:0px;"),
-                         column(6, h2("Post-Game Report"), tags$hr(style="border-color: black;"), h2(textOutput("selected_game")), align = "right", style = "padding-left:0px;")),
+                         column(4, h2(strong(textOutput("selected_pitcher"))), hr(style="border-color: black;"), style = "padding-right:0px;"),
+                         column(6, h2("Post-Game Report"), hr(style="border-color: black;"), h2(textOutput("selected_game")), align = "right", style = "padding-left:0px;")),
                      hr(style="border-color: black;"), 
                      fluidRow(
                          column(10, offset = 1, h3(strong("Pitcher Summary Table")), dataTableOutput("pitcher_summary_table"), align = "center")
