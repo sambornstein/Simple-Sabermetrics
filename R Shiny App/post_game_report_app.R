@@ -52,7 +52,7 @@ ui <- fluidPage(
 server <- function(input, output, session) {
     
     observeEvent(input$PitcherInput, 
-                 updateSelectInput(session, "GameInput", "Select Game", 
+                 updateSelectInput(session, inputId = "GameInput", label = "Select Game", 
                                    choices = sort(unique(NL_CY$game_date[NL_CY$player_name == input$PitcherInput]))))
     
     output$selected_pitcher <- renderText({paste(input$PitcherInput)})
