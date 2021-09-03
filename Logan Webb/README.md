@@ -1,5 +1,5 @@
 
-The article that goes along with this repository can be read here:
+The article that goes along with this repository can be read here: https://www.simplesabermetrics.com/post/visualizing-logan-webb-s-fastballs
 
 ### Repository Files
 
